@@ -1,0 +1,31 @@
+CHWIRUT1LS         3        16        32     0.088  Optimal
+CHWIRUT2LS         3        15        32     0.039  Optimal
+FBRAIN3LS          6      1357      1781     5.391  Optimal
+GAUSS1LS           8        21        32     0.023  Optimal
+GAUSS2LS           8        21        33     0.025  Optimal
+GAUSS3LS           8        24        34     0.024  Optimal
+HAHN1LS            7       107       197     0.068  Near Optimal (badly scaled)
+HEART6LS           6      3052      4151     2.748  Optimal
+HEART8LS           8      3133      4257     2.805  Optimal
+KIRBY2LS           5        39        60     0.019  Optimal
+OSBORNEA           5        65        80     0.027  Optimal
+PARKCH            15        51        70     2.799  Optimal
+VESUVIALS          8       NaN       NaN       NaN  Line search failure
+VESUVIOLS          8        34        70     0.046  Optimal
+VESUVIOULS         8        40        70     0.042  Optimal
+CHWIRUT1LS         3        16        32     0.072  Optimal
+CHWIRUT2LS         3        15        32     0.024  Optimal
+FBRAIN3LS          6      1324      1735     5.100  Optimal
+GAUSS1LS           8        21        32     0.033  Optimal
+GAUSS2LS           8        21        33     0.025  Optimal
+GAUSS3LS           8        24        34     0.015  Optimal
+HAHN1LS            7       107       197     0.081  Near Optimal (badly scaled)
+HEART6LS           6      3052      4151     2.707  Optimal
+HEART8LS           8      3133      4257     2.721  Optimal
+KIRBY2LS           5        39        60     0.019  Optimal
+OSBORNEA           5        65        80     0.025  Optimal
+PARKCH            15        51        70     2.849  Optimal
+VESUVIALS          8       NaN       NaN       NaN  Too many iterations
+VESUVIOLS          8        34        70     0.040  Optimal
+VESUVIOULS         8        40        70     0.056  Optimal
+CHWIRUT1LS         3        16        32     0.014  Optimal

@@ -1,0 +1,1 @@
+/home/jburst/.cutest/specs/LDLTR.SPC
