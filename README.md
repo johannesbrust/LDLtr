@@ -9,34 +9,53 @@
  the gradient of the objective f(x).
  
 ## Setup
-Files are organized in 6 folders:
+Files are organized in the following:
 
-	ALGS/ 		(main algorithms)
-	AUXILIARY/ 	(support routines)
-	DATA/ 		(data for figures and tables)
-	EXPERIMENTS/ 	(examples and experiments)
-	EXTERNAL/ 	(third party software)
-	FIGS/		(figures)
+	FORTRAN/
+ 		cutest/			(files for integration with CUTEst)
+ 		examples/		(stand-alone example)
+   		funcs/			(objective function(s) for example)     		
+   		include/		(source: triang. solves, LDL updates, and more)
+     	main/			(source: main algorithm, parameters)
+       	objs/ 			(complied files with ending: *.o and *.mod)
+	 	test/ 			(internal tests)
 
-To rerun any experiment from the folder "EX_COMP_LMSSM_LSR1_m_q5" the 
-CUTEst (https://github.com/ralna/CUTEst/wiki) test set has to be installed. 
-If CUTEst is installed, then the relative path to the CUTEst installation
-is to be updated in 
+	MATLAB/
+ 		Statistics/		(output of algorithm runs)
+   		EXAMPLE.m		(stand-alone example)
+     	LDLtr.m			(main algorithm)
+       	runUCset.m		(experiment with CUTEst problems)
+       		
+In order to run the experiments based on the large set of problems the
+testing library CUTEst (https://github.com/ralna/CUTEst/wiki) has to be installed. 
 
-	AUXILIARY/CUTEst_init.m
+### Fortran
+The ldl algorithm can be re-complied from the source files or one can make use
+of the precomplied binanries. For the simplest experience on a unix machine,
+or on Windows (with Cygwin, or similar) one can first navigate to
+FORTRAN/examples and then run
 
-Without a CUTEst installation, the figures can still be plotted 
-from within the "AUXILIARY/" folder by calling 
-fig*.m, *={1,2,3,4,5,6,7,8}
+		./test_ldlqn
 
-Detailed descriptions of the signatures of the algorithms in "ALGS/"
-are found in the beginning comments of the respective files
+In order to interface the solver with CUTEst (after CUTEst has been installed)
+one can copy the files within the FORTRAN/cutest folder to the corresponding
+folders of the CUTEst installation. For instance, one can copy the files
+from FORTRAN/cutest/src/ldltr to "LOCAL_CUTEST"/cutest/scr/.
+When LDLtr is interfaced with CUTEst one can run the algorithm with e.g.,
 
-The codes have been tested on:
+		runcutest -p ldlqn -D BDQRTIC
 
-Matlab R2016a, macOS Catalina, {CUTEst n/a, July 2017}
+where BDQRTIC is a problem name from CUTEst. 
+
+### Matlab
+With CUTEst for Matlab installed one can modify the path specified
+in MATLAB/runUCset.m to point ot the local CUTEst installation.
 
 ## Examples
+
+### Fortran
+To try-out an example 
+
 
 ### Matlab 
 To try-out three examples navigate inside folder "EXPERIMENTS/".
