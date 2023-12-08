@@ -9,7 +9,7 @@
  the gradient of the objective f(x).
  
 ## Setup
-Files are organized in the following:
+Files are organized in the following way:
 
 	FORTRAN/
  		cutest/			(files for integration with CUTEst)
