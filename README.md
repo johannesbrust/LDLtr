@@ -27,7 +27,7 @@ Files are organized in the following way:
        	runUCset.m		(experiment with CUTEst problems)
 		more files
        		
-In order to run the experiments based on the large set of problems the
+In order to run the large-scale experiments, the
 testing library CUTEst (https://github.com/ralna/CUTEst/wiki) has to be installed. 
 
 ### Fortran
