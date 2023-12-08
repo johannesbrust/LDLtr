@@ -80,7 +80,7 @@ To try-out an example you can navigate to FORTRAN/examples and call
 
 		./test_ldlqn
 
-The result on linux computer with gfortran 10.5 is
+The result on a linux computer with gfortran 10.5 is
 
 ```
 ************************************************************************
@@ -154,7 +154,7 @@ With CUTEst installed one can issue a command such as
 
 		jburst@francis:~/Dropbox/git/LDLtr/FORTRAN$ runcutest -p ldltr -D BDQRTIC
 
-The output on linux computer with gfortran 10.5 is
+The output on a linux computer with gfortran 10.5 is
 
 ```
 jburst@francis:~/Dropbox/git/LDLtr/FORTRAN$ runcutest -p ldltr -D BDQRTIC
